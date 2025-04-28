@@ -16,6 +16,7 @@ export default function Header() {
             router.push("/homepage");
         };
     return (
+        <div>
         <div className="flex flex-wrap items-center justify-between w-max">
         <h1 className="text-4xl font-bold text-center">HealthCare</h1>
         <button className= "ml-8" onClick={(e) => {
@@ -30,5 +31,10 @@ export default function Header() {
                 }}>
                      Patient Info</button>
       </div>
+      <div>
+        <h1> Streamline Medical Record Storage! </h1>
+      </div>
+      </div>
+      
     );
   }
