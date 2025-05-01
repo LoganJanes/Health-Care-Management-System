@@ -10,7 +10,7 @@ export default function Header() {
     
         const handlePatient = () => {
           
-          router.push("/patient"); };
+          router.push("/heart-disease"); };
 
         const handleHome = () => {
             router.push("/homepage");
@@ -29,10 +29,10 @@ export default function Header() {
                   e.preventDefault();
                   handlePatient();
                 }}>
-                     Patient Info</button>
+                     Heart Disease </button>
       </div>
       <div>
-        <h1> Streamline Medical Record Storage! </h1>
+        <h1> Streamline Health Assesment! </h1>
       </div>
       </div>
       
