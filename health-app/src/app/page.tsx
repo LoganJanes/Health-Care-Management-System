@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault(); };
 
     const handleLogin = () => {
-      
+      // Simulate login (authentication logic will go here when implemented)
       router.push("/homepage"); };
 
   return (
@@ -23,7 +23,8 @@ export default function Login() {
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
       <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
 
-
+      {/* Left Panel - Login Info. Will add database for storing emails and passwords */}
+      
       <form>
         <div className = "mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -68,7 +69,7 @@ export default function Login() {
 
 
 
-
+{/* Right Panel - Image */}
       <div className="bg-gray-100 p-4">
       <div className = "h-screen">
       <img src="/Images/login-image.jpg" alt="paperwork" className="w-full h-full object-center" />

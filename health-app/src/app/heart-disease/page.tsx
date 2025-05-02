@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, useEffect} from 'react';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -10,6 +10,15 @@ export default function Home() {
   });
 
   const [result, setResult] = useState('');
+
+  useEffect(() => {
+    // This will run only on the client, after the initial render.
+    setFormData({
+      age: '', sex: '', cp: '', trestbps: '', chol: '',
+      fbs: '', restecg: '', thalach: '', exang: '',
+      oldpeak: '', slope: '', ca: '', thal: ''
+    });
+  }, []);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
